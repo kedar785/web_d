@@ -13,8 +13,8 @@
                 padding: 20px 30px;
                 margin: 30px;
                 border:20px solid; */
-                background-color: brown;
-                height:100px;
+                background-color: rgb(48, 42, 165);
+                height:200px;
                 width:200px;
             }
             span{
@@ -24,9 +24,11 @@
                 padding: 20px 30px;
                 margin: 30px;
                 border:20px ; */
-                 background-color:green;
-                height:100px;
+                 background-color:rgba(0, 128, 0, 0.833);
+                height:200px;
                 width:200px;
+                display:block;
+                
             }
             </style>
     </head>
