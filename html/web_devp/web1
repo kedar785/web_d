@@ -1,0 +1,30 @@
+<html>
+<head>
+    </head>
+    <body>
+        <table border="2" cellspacing="5" cellpadding="5">
+            <tr>
+                <th>weekly Class Time Table</th></tr>
+            <tr>
+                <td></td>
+            </tr>
+            <!-- <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+            </tr>
+            <tr>
+                <td>10am</td>
+                <td>html</td>
+                <td>css</td>
+                <tr>
+                    <tr>
+                        <td>12pm</td>
+                        <td>css</td>
+                        <td>html</td>
+                    </tr> -->
+         </table>
+            </body>
+</html>
+
+

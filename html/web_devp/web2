@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <body>
+            <fieldset>
+                <from>
+                    <lable for="one">Name: </lable>
+                    <input id="text" placeholder="Enter your name">
+                    <br/>
+                    <lable for="one">contact No:</lable>
+                    <intput id="text" placeholder="enter your contact No"></intput>
+                    <br/>
+
+                    <br>
+                    <br>
+                    <span>Male</span>
+                    <input  name="one"type="radio">
+                    <span>FeMale</span>
+                    <input name="one" type="radio">
+                    <br>
+                    <input type="file"/>
+                    <select>
+                        <option>indor</option>
+                        <option>bhopal</option>
+                        <option>jbp</option>
+                    </select>
+                </from>
+
+        </body>
+    </head>
+</html>
