@@ -1,0 +1,42 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        #nav{
+           border: solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+        #home_div{
+            color: antiquewhite;
+            font-size: 10px;
+           
+            display:flex;
+            width:300px;
+            justify-content: space-between;
+        }
+        a{
+            color:aliceblue
+        }
+     </style>
+</head>
+<body>
+    <div id="nov">
+        <div><a>Home</a></div>
+        <div id="home_div"><a>About</a>
+        <a>Contact us</a>
+        <a>info</a>
+        <div><button>Login</button></div>
+    </div>
+    </div>
+</body>
+</html>

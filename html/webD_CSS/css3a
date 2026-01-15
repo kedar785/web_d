@@ -1,0 +1,60 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height:400px;
+            width:600px;
+         
+        border: solid rebeccapurple;
+        }
+        #parent:hover .one{
+            margin-left: 500px ;
+              
+            
+        }
+        .one{
+              height:100px;
+             width:100px;
+             border-radius: 50%;
+              transition: 3s;
+          }
+     
+        
+        #on{
+            background-color: blue;
+           
+             transition-timing-function: linear;
+        }
+        #two{
+           background-color: chartreuse;
+        
+             transition-timing-function: ease-in;
+        }
+        #three{
+            background-color: chocolate;
+           
+             transition-timing-function: ease-out;
+        }
+        #four{
+            background-color: aqua;
+            
+             transition: ease-in-out;
+        }
+        </style>
+</head>
+<body>
+     <div id="parent">
+      
+    <div id="on" class="one"></div>
+     <div id="two" class="one"></div>
+      <div id="three" class="one"></div>
+       <div id="four"  class="one"></div>
+   
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     #main{
+       height: 300px;
+            width: 300px;
+            margin: 50px auto;
+            transition: 3s;
+           
+            border-radius: 21px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+           }
+           #main_a{
+            height: 50%;
+            width: 100%;
+           }
+           #main_b{
+            height: 35%;
+            width: 35%;
+           }
+           img{
+            height: 100%;
+            width: 100%;
+          
+           }
+           #main_b img{
+            border-radius: 50%;
+            position: relative;
+            top: -52px;
+            left: 90px;
+           }
+           #main:hover{
+            transform: scale(1.2);
+           }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="main_a">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ9YVrhuDiWsbAtfmNS5j6ctvAEw1bnrsX-Q&s"> </img>
+        </div>
+        <div id="main_b">
+    <img src="https://t3.ftcdn.net/jpg/02/08/75/86/360_F_208758619_i42Fj7HVUibHegABGZDI2yokxGy54KBd.jpg"></img>
+    </div>
+    </div>
+
+</body>
+</html>
