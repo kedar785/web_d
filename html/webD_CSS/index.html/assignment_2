@@ -6,37 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <style>
+        *{
+            margin:0;
+            padding:0;
+        }
         #nav{
            border: solid black;
             display: flex;
-            justify-content: center;
+            height:50px;
+            justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
-            font-size: 20px;
             cursor: pointer;
-
+            flex-wrap: warp;
         }
         #home_div{
-            color: antiquewhite;
-            font-size: 10px;
-           
             display:flex;
             width:300px;
+            flex-wrap: wrap;
             justify-content: space-between;
         }
         a{
-            color:aliceblue
+            color:white
         }
      </style>
 </head>
 <body>
     <div id="nov">
         <div><a>Home</a></div>
-        <div id="home_div"><a>About</a>
+        <div id="home_div">
+            <a>About</a>
         <a>Contact us</a>
-        <a>info</a>
+        <a>info</a> </div>
         <div><button>Login</button></div>
     </div>
-    </div>
+   
 </body>
 </html>

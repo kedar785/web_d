@@ -22,9 +22,11 @@
 
          }
          #parent div{
+            
             height:100px;
             width:100px;  
-        border-radius:50% ;    
+        border-radius:50% ;   
+         border: 4px solid darkorange  
          }
          #parent div:nth-of-type(1){
             background-color: rgb(165, 91, 42);
@@ -43,10 +45,10 @@
 </head>
 <body>
     <div id="parent">
-        <div>one</div>
-         <div>two</div>
-          <div>three</div>
-           <div>four</div>
+        <div></div>
+         <div></div>
+          <div></div>
+           <div></div>
     </div>
 </body>
 </html>

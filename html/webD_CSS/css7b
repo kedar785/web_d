@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rebeccapurple;
+            height: 200px;
+            width: 300px;
+            animation-name: Naruto;
+            border-radius: 50%;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes Naruto {
+            0% {
+                background-color: purple;
+                height: 300px;
+                width: 300px;
+                border-radius: 40px;
+
+            }25%{
+                background-color: gold;
+                height: 200px;
+                width: 200px;
+                border-radius: 40px;
+
+            }
+            50% {
+                background-color: coral;
+                height: 100px;
+                width: 100px;
+                border-radius: 40%;
+            }
+            100% {
+                background-color: green;
+                height: 50px;
+                width: 50px;
+                border-radius: 40%;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Animation Demo</h2>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <!-- Animationss -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rgb(17, 255, 0);
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+             border-radius: 50%;
+             border: solid red;
+            animation-name: any;
+            animation-duration:700ms ;
+
+             animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes any{
+            0%{
+                  transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(85vh) rotate(360deg);
+            }
+        }
+          </style>
+</head>
+<body>
+    
+    <div></div>
+</body>
+</html>

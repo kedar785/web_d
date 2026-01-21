@@ -1,14 +1,13 @@
 <html>
 <head>
     </head>
+     <h3>weekly Class Time Table :-</th>
+        <br>
     <body>
-        <table border="2" cellspacing="5" cellpadding="5">
+        <table border="2" cellspacing="1" cellpadding="8">
+          
+               </tr>
             <tr>
-                <th>weekly Class Time Table</th></tr>
-            <tr>
-                <td></td>
-            </tr>
-            <!-- <tr>
                 <th>Time</th>
                 <th>Monday</th>
                 <th>Tuesday</th>
@@ -22,7 +21,7 @@
                         <td>12pm</td>
                         <td>css</td>
                         <td>html</td>
-                    </tr> -->
+                    </tr>
          </table>
             </body>
 </html>
