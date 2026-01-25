@@ -1,0 +1,18 @@
+h1{
+    color:royalblue;
+}
+p{
+    color:rgb(174, 30, 8);
+}
+button{
+    color:rgb(32, 176, 65);
+    background-color: white;
+   
+}
+body{
+    /* color system:- red+green=yellow;
+    red+blue=pink;
+    blue+green=sky;
+    red+green+blue=white; */
+    background-color:#5B867F;
+}
