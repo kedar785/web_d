@@ -1,0 +1,54 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #parent{
+            border:4px solid red;
+            background-color: chartreuse;
+            height:400px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            /* justify-content:baseline;
+              justify-content:center; 
+              /* justify-content:end;
+               justify-content:space-around;
+                justify-content:space-between;
+                 justify-content:space-evenly */ 
+
+         }
+         #parent div{
+            
+            height:100px;
+            width:100px;  
+        border-radius:50% ;   
+         border: 4px solid darkorange  
+         }
+         #parent div:nth-of-type(1){
+            background-color: rgb(165, 91, 42);
+         }
+          #parent div:nth-of-type(2){
+            background-color: rgb(42, 118, 165);
+         }
+          #parent div:nth-of-type(3){
+            background-color: rgb(85, 42, 165);
+         }
+          #parent div:nth-of-type(4){
+            background-color: rgb(165, 42, 159);
+         }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div></div>
+         <div></div>
+          <div></div>
+           <div></div>
+    </div>
+</body>
+</html>
