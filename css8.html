@@ -1,0 +1,69 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .parent{
+                border:3px solid;
+                height: 600px;
+                width: 800px;
+                display: grid;
+                grid-template-columns:repeat(3,1fr) ;
+               grid-template-rows:repeat(3,1fr);
+              
+               gap: 10px;
+
+            }
+            .child{
+                /* background-color: rgb(208, 225, 153); */
+                /* border:1px solid crimson; */
+                overflow:hidden ;
+            }
+            .child:hover img{
+                transform: scale(1.2);
+                filter:12px;
+            }
+             img{
+                height: 100%;
+                width: 100%;
+             }   
+            #one{
+              
+            }
+            #two{
+                /* background-color: aquamarine; */
+            
+            }
+            #three{
+            /* background-color:rgb(250, 250, 61); */
+            }
+            /* #four{
+                background-color: rgb(223, 147, 198);
+            } */
+            #eight{
+                /* background-color: rgb(230, 88, 88); */
+            }
+            #six{
+                grid-row: 2/4;
+                grid-column: 3/4;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child" id= one > <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s" alt="">   </div>
+             <div class="child" id= two ><img   src="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" alt=""></div>
+              <div class="child" id= three ><img src="https://buffer.com/resources/content/images/2025/03/social-media-image-sizes.png"   > </div>
+               <div class="child" id= four ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCj5IcaUHyi1yRBFtLfQxU6Mzgw8LcnmNbA&s"   > </div>
+                <div class="child" id= five ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRntSRN1RpI0u-aV9H7DrSx4vXts0pweA47AmdMNxvf4A&s"   > </div>
+                 <div class="child" id= six ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTl4-SxLlTcKqfADaZcamk9RWtBx8t0IKhGC3UwvP&s"   > </div>
+                  <div class="child" id= seven ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-r6ihDtDWr5r6bTnnNrANqrcLqb0p_IZYTBDU-nz5&s"   > </div>
+                   <div class="child" id= eight ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdPFA6r_IbzQJcyXrKT5TSritv0S_iWwFmw&s"   > </div>
+                    <div class="child" id= nine ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF0lzpg0pPZP_ItvNm-X7jEjUqaRuhXdofIw&s"   > </div>
+                     <div class="child" id= ten ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rCYgivYp0azFaIyhme6NKz_PHEI3D4Pu2A&s"   > </div>
+        </div>
+    </body>
+    </html>
