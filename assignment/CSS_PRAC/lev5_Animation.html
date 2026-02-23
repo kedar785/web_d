@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:100px;
+            width:100px;
+            border-radius: 50%;
+            background: linear-gradient(rgb(245, 97, 220), rgb(69, 230, 80),rgb(78, 81, 245));
+            border:2px solid red ;
+            position:absolute;
+            
+            left:250px;
+            animation-name:colorAnimation;
+             animation-duration:1s;
+             /* animation-timing-function: ease-in; */
+             animation-delay: 0s;
+             animation-iteration-count:infinite;
+            
+             
+        }
+
+        @keyframes colorAnimation{
+            0%{top:0px;}
+            50%{  background: linear-gradient(rgb(235, 24, 24), hsl(66, 90%, 50%),rgb(21, 165, 43));}
+           100%{ top:585px;}
+            /* from{top:0px;}
+            to{ top:585px;} */
+            
+        }
+        body{
+            background-color: aqua;
+           
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
