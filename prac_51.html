@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:50px;
+            width:50px;
+            border-radius: 50%;
+            
+            border:5px solid rgb(44, 5, 236);
+            border-top:5px solid rgba(226, 220, 220, 0.751);
+             position: absolute;
+             top:200px;
+             left:300px;
+            animation:spinAnimate 1s ease-in-out 0.2s infinite normal;
+           
+           
+        }
+        @keyframes spinAnimate{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

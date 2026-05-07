@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <body>
+            <fieldset>
+                <from>
+                    <lable for="one">Name: </lable>
+                    <br>
+                    <input id="text" placeholder="Enter your name">
+                    <br/>
+                    <lable for="one">contact No:</lable>
+                    <br>
+                    <input id="text" placeholder="enter your contact No">
+                    <br/>
+                     <lable for="one">Password:</lable>
+                    <br>
+                    <input id="text" placeholder="enter your passward">
+                    <br/>
+                    <lable for="one">Age:</lable>
+                    <br>
+                    <input id="text" placeholder="enter your Age">
+                    <br/>
+                  
+                    <span>Gender</h3>
+                        <br>
+                    <span>Male</span>
+                    <input  name="one"type="radio">
+                    <span>FeMale</span>
+                    <input name="one" type="radio">
+                    <br>
+
+                    <!-- <input type="file"/> -->
+                     <span>City : </span>
+                     <select>
+                        <option>indor</option>
+                        <option>bhopal</option>
+                        <option>jbp</option >
+                             <input id="text" placeholder="Enter city">
+                    </select>
+                    <br>
+                      <input name="one" type="checkbox">
+                      <span>I agree to city</span>
+                      <br>
+                    <span>Address : </span>
+                    <br>
+                    <input  size="55"   id="text" placeholder="Enter your Adrdress">
+                </from>
+
+        </body>
+    </head>
+</html>
