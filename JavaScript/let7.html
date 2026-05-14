@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+  img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover; /* image ko frame ke andar fit karega */
+  }
+</style>
+</head>
+<body>
+    <!-- <h2></h2> -->
+       <img src="" alt="slideshow"></img>
+    <script>
+        // let Promise=new Promise((res,reject)=>{
+        //     res()
+        // } )
+        // console.log(Promise);
+        // Promise.then(()=>{
+        //     console.log("donee");
+            
+        // }).catch(()=>{
+        //     console.log("errr");
+            
+        // })
+
+        // function step1(){
+        //     return new Promise((res,re)=>{
+        //         setTimeout(()=>{
+        //             console.log("selecteddd");
+        //            res()                    
+        //         },5000)
+        //     })
+        // }
+        //   function step2(){
+        //     return new Promise((res,re)=>{
+        //         setTimeout(()=>{
+        //             console.log("captions");
+        //            res()                    
+        //         },4000)
+        //     })
+        // }
+        //          async function call(){
+        //     await step1()
+        //     console.log("hiii");
+        //     await step2()
+        //  }
+        //   call()
+
+        // let h2=document.querySelector("h2")
+        // fetch("https://jsonplaceholder.typicode.com/todos/").then((data)=>{
+        //     return data.json()
+        // }).then((val)=>{
+        //     console.log(val);
+        //     // h2.innerText=val[1].title
+        //   val.forEach((item)=>{
+        //      h2.innerHTML+=item.title+"<br><br>"
+        // })
+        // })
+        // .catch((err)=>{
+        //     console.log(err);
+            
+        // })
+
+        const arr=[
+          ' https://png.pngtree.com/background/20250106/original/pngtree-dslr-background-hd-wallpapers-pxfuel-image-picture-image_15492735.jpg',
+            'https://i0.wp.com/picjumbo.com/wp-content/uploads/silhouettes-of-a-beautiful-tropical-vacation-resort-free-image.jpg?w=600&quality=80',
+           ' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZRs-iNMffqhuZsuJAD3HFSInLwiOkWYdoow&s',
+          '  https://img.magnific.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?semt=ais_hybrid&w=740&q=80',
+           ' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBqBsYdSaYjDuQTnKzZG-M-IxDEf8vA0bgA&s',
+         '  https://images.pexels.com/photos/36949773/pexels-photo-36949773.jpeg',
+           'https://images.pexels.com/photos/33681501/pexels-photo-33681501.jpeg',
+           'https://i.ytimg.com/vi/08s7PghDxNQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCZftjE8HT9bEqq4MDCA26He__O8A',
+           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0L86M7qns4-eR-gu3_KhLZcx0vqKVI0_XmHrP2xfl_A&s'
+        ]
+         const imageEL=document.querySelector('img');
+         let num=0;
+          setInterval(function(){
+            imageEL.setAttribute('src',arr[num]);
+            num=(num+1)%arr.length;
+          },200);
+    </script>
+</body>
+</html>
