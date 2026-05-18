@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+h1 {
+  margin: 20px;
+  color: #333;
+}
+
+.choices {
+  margin: 20px;
+}
+
+.choice {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.choice:hover {
+  background: #45a049;
+}
+
+.result {
+  margin-top: 30px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+</style>
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1>
+  <div class="choices">
+    <button class="choice">✊ Rock</button>
+    <button class="choice">✋ Paper</button>
+    <button class="choice">✌ Scissors</button>
+  </div>
+  <div class="result">
+    <p>Your Choice: <span id="user-choice"></span></p>
+    <p>Computer Choice: <span id="computer-choice"></span></p>
+    <p>Winner: <span id="winner"></span></p>
+  </div>
+  <script>
+    // Select all buttons
+const buttons = document.querySelectorAll('.choice');
+
+// Select result display elements
+const userChoiceDisplay = document.getElementById('user-choice');
+const computerChoiceDisplay = document.getElementById('computer-choice');
+const winnerDisplay = document.getElementById('winner');
+
+// Possible choices
+const choices = ["Rock", "Paper", "Scissors"];
+
+// Add event listener to each button
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    // User choice
+    const userChoice = button.innerText.split(" ")[1]; // Rock/Paper/Scissors
+    userChoiceDisplay.textContent = userChoice;
+
+    // Computer choice (random)
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+    computerChoiceDisplay.textContent = computerChoice;
+
+    // Decide winner
+    let winner = "";
+    if (userChoice === computerChoice) {
+      winner = "It's a Draw!";
+    } else if (
+      (userChoice === "Rock" && computerChoice === "Scissors") ||
+      (userChoice === "Paper" && computerChoice === "Rock") ||
+      (userChoice === "Scissors" && computerChoice === "Paper")
+    ) {
+      winner = "You Win!";
+    } else {
+      winner = "Computer Wins!";
+    }
+
+    // Show result
+    winnerDisplay.textContent = winner;
+  });
+});
+
+  </script>
+</body>
+</html>
