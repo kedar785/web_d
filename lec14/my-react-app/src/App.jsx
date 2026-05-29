@@ -1,17 +1,39 @@
-import React from 'react'
-import Form from './Form'
+import React, { useEffect, useState } from 'react'
+
 const App = () => {
+  let [count,SetCount]=useState(0)
+  let[city,SetCity]=useState("Goa")
+  useEffect(()=>{
+    console.log("hello");
+    
+  },[city])
   return (
-    <div >
-     <Form/>
+    <div>
+      <h2>{count}</h2>
+      <h4>{city}</h4>
+      <button onClick={()=>SetCity("manali")}>change</button>
+      <button onClick={()=>SetCount(count+1)} >click</button>
     </div>
   )
 }
 
 export default App
+//------------------------------
+
+// import React from 'react'
+// import Form from './Form'
+// const App = () => {
+//   return (
+//     <div >
+//      <Form/>
+//     </div>
+//   )
+// }
+
+// export default App
 
 //---------------------------------------
-//import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
 // const App = () => {
 //   let [input,SetInput]=useState("")
@@ -26,9 +48,9 @@ export default App
 //   }
 //   return (
 //     <div>
-//       <h2>{input}</h2>
-//       <input type='text' name='input' click='data' placeholder='Enter your name'  onChange={fun1}/>
-//       <button onClick={data}>click</button>
+//       <h2>{data}</h2>
+//       <input type='text' name='input'  placeholder='Enter your name'  onChange={fun1}/>
+//       <button onClick={done}>click</button>
 //     </div>
 //   )
 // }
