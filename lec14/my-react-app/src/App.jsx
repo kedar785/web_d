@@ -1,18 +1,36 @@
-import React, { useEffect, useState } from 'react'
 
+//--------------------------------------------------
+
+import React, { useEffect, useState } from 'react'
+ import './App.css'
 const App = () => {
-  let [count,SetCount]=useState(0)
-  let[city,SetCity]=useState("Goa")
+  
+  let[ApiData,SetApiData]=useState([])
   useEffect(()=>{
-    console.log("hello");
-    
-  },[city])
+    //console.log("hello");
+    async function call(){
+      let res=await fetch("https://dummyjson.com/products")
+      let data=      await res.json()
+     console.log(data.products);
+     SetApiData(data.products)
+      
+    }
+    call()
+  },[])
   return (
-    <div>
-      <h2>{count}</h2>
-      <h4>{city}</h4>
-      <button onClick={()=>SetCity("manali")}>change</button>
-      <button onClick={()=>SetCount(count+1)} >click</button>
+    <div id="parent_div" className=''>
+
+      {
+        ApiData.map((a)=>{
+          return(
+            <div id="cart">
+              <h1>{a.id}</h1>
+               <img  src={a.thumbnail}/>
+              </div>
+          )
+        })
+      }
+     
     </div>
   )
 }
