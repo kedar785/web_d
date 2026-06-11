@@ -319,27 +319,30 @@
 
 //--------------------------------------------------
 
-import React, { useContext } from 'react'
-import { storeContext } from './Context'
+// import React, { useContext } from 'react'
+// import { storeContext } from './Context'
 
-const TodoList = () => {
+// const TodoList = () => {
      
-   let {store,dispatch}=   useContext(storeContext)
-  return (
-    <div>
-      <input onChange={(e)=>dispatch({type:"Set_inp",payload:e.target.value})}/>
-      <button onClick={()=>dispatch({type:"Add_todo"})}>add</button>
-      {
-        store.todos.map((a)=>{
-          console.log(a);
+//    let {store,dispatch}=   useContext(storeContext)
+//   return (
+//     <div>
+//       <input onChange={(e)=>dispatch({type:"Set_inp",payload:e.target.value})}/>
+//       <button onClick={()=>dispatch({type:"Add_todo"})}>add</button>
+//       {
+//         store.todos.map((a)=>{
+//           console.log(a);
           
-          return(<>
-          <h6>{a}</h6>
-          </>)
-        })
-      }
-    </div>
-  )
-}
+//           return(<>
+//           <h6>{a}</h6>
+//           </>)
+//         })
+//       }
+//     </div>
+//   )
+// }
 
-export default TodoList
+// export default TodoList
+
+//-------------------------------------
+
