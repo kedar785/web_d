@@ -1,32 +1,48 @@
 
-import React, { useMemo } from 'react'
-import useCounter from "./useCounter"
+import React from 'react'
+import Task from './task'
+
 const App = () => {
-      let {count,inc,dec,reset}=    useCounter(0)
-
-    let total=  useMemo(()=>{
-        let res=0
-        for(let i=0;i<1000000000;i++){
-          res+=i
-        }
-        return res
-
-
-      },[])
-
-  
   return (
     <div>
-      <h4>{count}</h4>
-      <h3>{total}</h3>
-       <button onClick={inc}>++</button>
-       <button onClick={dec}>--</button>
-       <button onClick={reset}>reset</button>
+      <h2>haii</h2>
+      <Task></Task>
     </div>
   )
 }
 
 export default App
+
+
+//----------------------------------------------
+// import React, { useMemo } from 'react'
+// import useCounter from "./useCounter"
+// const App = () => {
+//       let {count,inc,dec,reset}=    useCounter(0)
+
+//     let total=  useMemo(()=>{
+//         let res=0
+//         for(let i=0;i<1000000000;i++){
+//           res+=i
+//         }
+//         return res
+
+
+//       },[])
+
+  
+//   return (
+//     <div>
+//       <h4>{count}</h4>
+//       <h3>{total}</h3>
+//        <button onClick={inc}>++</button>
+//        <button onClick={dec}>--</button>
+//        <button onClick={reset}>reset</button>
+//     </div>
+//   )
+// }
+
+// export default App
 
 //----------------------------------------
 // import React from 'react'
