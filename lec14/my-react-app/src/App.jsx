@@ -1,17 +1,39 @@
 
+
 import React from 'react'
-import Task from './task'
+import UserList from "./UserList"
+import { Route, Routes } from "react-router-dom"
+import UserProfile from "./UserProfile"
 
 const App = () => {
   return (
     <div>
-      <h2>haii</h2>
-      <Task></Task>
+     {/* http://localhost:5173/profile/0 */}
+      <Routes>
+        <Route   path="/"   element={ <UserList/>}/>
+        <Route   path="/profile/:id"   element={ <UserProfile/>}/>
+
+      </Routes>
     </div>
   )
 }
 
 export default App
+
+//------------------------------------------------------
+// import React from 'react'
+// import Task from './task'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <h2>haii</h2>
+//       <Task></Task>
+//     </div>
+//   )
+// }
+
+// export default App
 
 
 //----------------------------------------------
