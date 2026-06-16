@@ -1,24 +1,89 @@
 
-
 import React from 'react'
-import UserList from "./UserList"
-import { Route, Routes } from "react-router-dom"
-import UserProfile from "./UserProfile"
 
 const App = () => {
+  Array.prototype.myReduce=function(cb,intialData){
+    let sum=intialData
+    for(let i=0;i<this.length;i++){
+      sum=cb(sum,this[i])
+    }
+
+    return sum
+  }
+  let arr=[1,2,3,4,5]
+  let data=arr.myReduce((a,b,c,d)=>{
+    return a+b
+  },10)
+  console.log(data);
+  
+  //------------------------------------------
+//  Array.prototype.myForEach=function(cb){
+    
+//     for(let i=0;i<this.length;i++){
+//      cb(this[i],i,this)
+//     }
+   
+//   }
+//   let arr=[1,2,3,43,5];
+//   let data=arr.myForEach((a,b,c)=>{
+//     console.log(a);
+    
+//   })
+//     console.log(data);
+  //---------------------------------
+  // Array.prototype.myMap=function(cb){
+  //   let res=[]
+  //   for(let i=0;i<this.length;i++){
+  //     res.push(cb(this[i],i,this))
+  //   }
+  //   return res
+  // }
+  // let arr=[1,2,3,43,5];
+  // let data=arr.myMap((a,b,c)=>{
+  //   return a>2
+  // })
+  //   console.log(data);
+    //-------------------------------
+
+  // let data=arr.map((a,b,c) =>{
+
+  // })
+  // console.log(arr.toString);
+  
+  // console.log(Array.prototype);
+  // console.log(Object.prototype);
+  // console.log(String.prototype); 
   return (
     <div>
-     {/* http://localhost:5173/profile/0 */}
-      <Routes>
-        <Route   path="/"   element={ <UserList/>}/>
-        <Route   path="/profile/:id"   element={ <UserProfile/>}/>
-
-      </Routes>
+      
     </div>
   )
 }
 
 export default App
+
+
+//------------------------------------------------
+
+// import React from 'react'
+// import UserList from "./UserList"
+// import { Route, Routes } from "react-router-dom"
+// import UserProfile from "./UserProfile"
+
+// const App = () => {
+//   return (
+//     <div>
+//      {/* http://localhost:5173/profile/0 */}
+//       <Routes>
+//         <Route   path="/"   element={ <UserList/>}/>
+//         <Route   path="/profile/:id"   element={ <UserProfile/>}/>
+
+//       </Routes>
+//     </div>
+//   )
+// }
+
+// export default App
 
 //------------------------------------------------------
 // import React from 'react'
